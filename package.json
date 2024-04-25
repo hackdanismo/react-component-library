@@ -1,15 +1,33 @@
 {
-  "name": "react-component-library",
+  "name": "@hackdanismo/react-component-library",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "license": "GPL-3.0-only",
+  "keywords": [],
+  "author": "",
+  "description": "React Component Library",
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/bundle.esm.js",
+      "require": "./dist/bundle.js"
+    }
+  },
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackdanismo/react-component-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hackdanismo/react-component-library/issues"
+  },
+  "homepage": "https://github.com/hackdanismo/react-component-library#readme",
   "devDependencies": {
     "@babel/preset-react": "^7.24.1",
     "react": "^18.2.0",
