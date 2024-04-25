@@ -11,6 +11,10 @@
   "license": "GPL-3.0-only",
   "devDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
   }
 }
