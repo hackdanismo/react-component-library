@@ -2,6 +2,9 @@
   "name": "@hackdanismo/react-component-library",
   "version": "0.0.1",
   "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=20.12.2"
+  },
   "keywords": [],
   "author": "",
   "description": "React Component Library",
