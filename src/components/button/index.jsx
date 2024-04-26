@@ -1,8 +1,13 @@
-import React from "react"
-
-const Button = () => {
+const Button = ({ type = "button", className, onClick, isDisabled, children, ...others }) => {
   return (
-    <button>Button example</button>
+    <button 
+      {...{ type, onClick }} 
+      className={className ? className : undefined} 
+      disabled={isDisabled ? isDisabled : undefined} 
+      {...others}
+    >
+      {children}
+    </button>
   )
 }
 
