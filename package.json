@@ -1,12 +1,18 @@
 {
   "name": "@hackdanismo/react-component-library",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "GPL-3.0-only",
   "engines": {
     "node": ">=20.12.2"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "React",
+    "Components",
+    "Component Library",
+    "Open Source",
+    "JavaScript"
+  ],
+  "author": "Dan Jackson <hackdanismo@gmail.com>",
   "description": "React Component Library",
   "main": "dist/bundle.js",
   "module": "dist/bundle.esm.js",

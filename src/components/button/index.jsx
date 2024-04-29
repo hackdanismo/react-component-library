@@ -1,8 +1,24 @@
-import React from "react"
+import Link from "./../link/index.jsx"
 
-const Button = () => {
-  return (
-    <button>Button example</button>
+const Button = ({ to, type = "button", className, onClick, isDisabled, openAsTab, children, ...others }) => {
+  return to ? (
+    <Link 
+      role="button" 
+      href={to} 
+      {... { className, openAsTab }}
+      {...others}
+    >
+      {children}
+    </Link>
+  ) : (
+    <button 
+      {...{ type, onClick }} 
+      className={className ? className : undefined} 
+      disabled={isDisabled ? isDisabled : undefined} 
+      {...others}
+    >
+      {children}
+    </button>
   )
 }
 
