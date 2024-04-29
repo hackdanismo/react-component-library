@@ -3,6 +3,7 @@
 ## 0.2.0 - TBC
 + Update `react` and `react-dom` package versions from `18.3.0` to `18.3.1`.
 + Add the `prop-types` package as a `devDependency` to apply prop validation to the components.
++ `Link` component added to the component library to allow images to be rendered within an application and to allow images to be wrapped within a `Link` to open a URL when clicked.
 
 ## 0.1.0 - 29th April, 2024
 + `Button` component added to the component library.

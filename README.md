@@ -64,6 +64,35 @@ import { Button } from "@hackdanismo/react-component-library"
 <Button onClick={myFunction}>Lorem ipsum</Button>
 ```
 
+### Image
+To import the component:
+
+```javascript
+import { Image } from "@hackdanismo/react-component-library"
+```
+
+`Image` component `props`:
+
+to, openAsTab, src, width, height, alt, ...others
+
++ `to` - pass a URL to the `Link` component via the `Image` component to open a URL when the image is clicked.
++ `openAsTab` - boolean to open a `Link` in a new browser window/tab when clicked.
++ `src` - the source/file path/URL of the image to be rendered (required).
++ `width` - set the width of the image (required).
++ `height` - set the height of the image (required).
++ `alt` - set the alternative text used to describe the image and aid accessibility when using screen readers (required).
++ `...others` - additional props.
+
+```javascript
+// Default
+<Image src="images/image-one.jpg" height={100} width={100} alt="Example image description here." />
+
+// Image that opens a link when clicked
+<Image to="https://example.com" src="images/image-one.jpg" height={100} width={100} alt="Example image description here." />
+// Image that opens a link when clicked in a new browser tab/window
+<Image to="https://example.com" src="images/image-one.jpg" height={100} width={100} alt="Example image description here." openAsTab />
+```
+
 ### Link
 To import the component:
 
