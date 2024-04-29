@@ -5,8 +5,8 @@
   "engines": {
     "node": ">=20.12.2"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["React", "Components", "Component Library", "Open Source", "JavaScript"],
+  "author": "Dan Jackson <hackdanismo@gmail.com>",
   "description": "React Component Library",
   "main": "dist/bundle.js",
   "module": "dist/bundle.esm.js",
