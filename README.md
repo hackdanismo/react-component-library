@@ -73,8 +73,6 @@ import { Image } from "@hackdanismo/react-component-library"
 
 `Image` component `props`:
 
-to, openAsTab, src, width, height, alt, ...others
-
 + `to` - pass a URL to the `Link` component via the `Image` component to open a URL when the image is clicked.
 + `openAsTab` - boolean to open a `Link` in a new browser window/tab when clicked.
 + `src` - the source/file path/URL of the image to be rendered (required).
