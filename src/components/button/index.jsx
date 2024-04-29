@@ -1,14 +1,15 @@
+import Link from "../link"
+
 const Button = ({ to, type = "button", className, onClick, isDisabled, openAsTab, children, ...others }) => {
   return to ? (
-    <a 
+    <Link 
       role="button" 
       href={to} 
-      className={className ? className : undefined} 
-      target={openAsTab ? "blank" : undefined} 
+      {... { className, openAsTab }}
       {...others}
     >
       {children}
-    </a>
+    </Link>
   ) : (
     <button 
       {...{ type, onClick }} 
