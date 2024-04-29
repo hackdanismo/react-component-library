@@ -2,6 +2,7 @@
 
 ## 0.2.0 - TBC
 + Update `react` and `react-dom` package versions from `18.3.0` to `18.3.1`.
++ Add the `prop-types` package as a `devDependency` to apply prop validation to the components.
 
 ## 0.1.0 - 29th April, 2024
 + `Button` component added to the component library.
