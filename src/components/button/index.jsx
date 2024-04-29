@@ -1,4 +1,4 @@
-import Link from "../link"
+import Link from "./../link/index.jsx"
 
 const Button = ({ to, type = "button", className, onClick, isDisabled, openAsTab, children, ...others }) => {
   return to ? (
