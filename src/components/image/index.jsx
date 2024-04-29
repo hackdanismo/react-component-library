@@ -23,7 +23,7 @@ const Image = ({ to, openAsTab, src, width, height, alt, className, ...others })
   )
 }
 
-Link.propTypes = {
+Image.propTypes = {
   to: PropTypes.string,
   openAsTab: PropTypes.bool,
   src: PropTypes.string.isRequired,
