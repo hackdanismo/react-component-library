@@ -81,11 +81,15 @@ to, openAsTab, src, width, height, alt, ...others
 + `width` - set the width of the image (required).
 + `height` - set the height of the image (required).
 + `alt` - set the alternative text used to describe the image and aid accessibility when using screen readers (required).
++ `className` - pass classes to apply styling into the component.
 + `...others` - additional props.
 
 ```javascript
 // Default
 <Image src="images/image-one.jpg" height={100} width={100} alt="Example image description here." />
+
+// Pass classes to the component
+<Image src="images/image-one.jpg" className="foo bar" height={100} width={100} alt="Example image description here." />
 
 // Image that opens a link when clicked
 <Image to="https://example.com" src="images/image-one.jpg" height={100} width={100} alt="Example image description here." />

@@ -2,10 +2,14 @@ import PropTypes from "prop-types"
 
 import Link from "./../link/index.jsx"
 
-const Image = ({ to, openAsTab, src, width, height, alt, ...others }) => {
+const Image = ({ to, openAsTab, src, width, height, alt, className, ...others }) => {
   // Object containing the image element that will be rendered along with the props
   const ImageElement = (
-    <img {...{ src, width, height, alt }} {...others} />
+    <img 
+      {...{ src, width, height, alt }} 
+      className={className ? className : undefined}  
+      {...others} 
+    />
   )
 
   return to ? (
@@ -26,6 +30,7 @@ Link.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   alt: PropTypes.string.isRequired,
+  className: PropTypes.string,
 }
 
 export default Image
