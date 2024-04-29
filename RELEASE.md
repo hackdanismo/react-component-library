@@ -1,5 +1,8 @@
 # Release Log
 
+## 0.2.0 - TBC
++ Update `react` and `react-dom` package versions from `18.3.0` to `18.3.1`.
+
 ## 0.1.0 - 29th April, 2024
 + `Button` component added to the component library.
 + `Link` component added to the component library.
