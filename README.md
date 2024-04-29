@@ -64,6 +64,29 @@ import { Button } from "@hackdanismo/react-component-library"
 <Button onClick={myFunction}>Lorem ipsum</Button>
 ```
 
+### Heading
+To import the component:
+
+```javascript
+import { Heading } from "@hackdanismo/react-component-library"
+```
+
+`Heading` component `props`:
+
++ `level` - set the heading level between `1` and `6` to render `<h1>` to `<h6>` heading elements.
++ `className` - pass classes to apply styling into the component.
++ `...others` - additional props.
+
+```javascript
+// Default - this will default to a <h1> element if no level prop is used
+<Heading>Lorem ipsim</Heading>
+
+// Heading set to render as a <h3> element
+<Heading level={3}>Lorem ipsim</Heading>
+// Add class names to the heading
+<Heading level={3} className="foo bar">Lorem ipsim</Heading>
+```
+
 ### Image
 To import the component:
 
