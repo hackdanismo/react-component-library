@@ -26,7 +26,7 @@ const Button = ({ to, type = "button", className, onClick, isDisabled, openAsTab
 
 Button.propTypes = {
   to: PropTypes.string,
-  type: PropTypes.oneOf(["button", "submit", "reset"]),
+  type: PropTypes.oneOf(["button", "submit", "reset"]).isRequired,
   className: PropTypes.string,
   isDisabled: PropTypes.bool,
   openAsTab: PropTypes.bool,
