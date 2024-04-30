@@ -64,6 +64,96 @@ import { Button } from "@hackdanismo/react-component-library"
 <Button onClick={myFunction}>Lorem ipsum</Button>
 ```
 
+### Heading
+To import the component:
+
+```javascript
+import { Heading } from "@hackdanismo/react-component-library"
+```
+
+`Heading` component `props`:
+
++ `level` - set the heading level between `1` and `6` to render `<h1>` to `<h6>` heading elements.
++ `className` - pass classes to apply styling into the component.
++ `...others` - additional props.
+
+```javascript
+// Default - this will default to a <h1> element if no level prop is used
+<Heading>Lorem ipsim</Heading>
+
+// Heading set to render as a <h3> element
+<Heading level={3}>Lorem ipsim</Heading>
+// Add class names to the heading
+<Heading level={3} className="foo bar">Lorem ipsim</Heading>
+```
+
+### Image
+To import the component:
+
+```javascript
+import { Image } from "@hackdanismo/react-component-library"
+```
+
+`Image` component `props`:
+
++ `to` - pass a URL to the `Link` component via the `Image` component to open a URL when the image is clicked.
++ `openAsTab` - boolean to open a `Link` in a new browser window/tab when clicked.
++ `src` - the source/file path/URL of the image to be rendered (required).
++ `width` - set the width of the image (required).
++ `height` - set the height of the image (required).
++ `alt` - set the alternative text used to describe the image and aid accessibility when using screen readers (required).
++ `className` - pass classes to apply styling into the component.
++ `...others` - additional props.
+
+```javascript
+// Default
+<Image src="images/image-one.jpg" height={100} width={100} alt="Example image description here." />
+
+// Pass classes to the component
+<Image src="images/image-one.jpg" className="foo bar" height={100} width={100} alt="Example image description here." />
+
+// Image that opens a link when clicked
+<Image to="https://example.com" src="images/image-one.jpg" height={100} width={100} alt="Example image description here." />
+// Image that opens a link when clicked in a new browser tab/window
+<Image to="https://example.com" src="images/image-one.jpg" height={100} width={100} alt="Example image description here." openAsTab />
+```
+
+### Input
+To import the component:
+
+```javascript
+import { Input } from "@hackdanismo/react-component-library"
+```
+
+`Input` component `props`:
+
++ `type` - set the data type for the field: `"date"`, `"datetime-local"`, `"email"`, `"hidden"`, `"month"`, `"number"` `"password"`, `"search"`, `"tel"`, `"text"` (default), `"time"`, `"url"` and `"week"`.
++ `className` - pass classes to apply styling into the component.
++ `id` - used as a value to connect to a `<label>` element when using the `for` attribute in a form label.
++ `name` - used as a value during form submissions to submit form data.
++ `placeholder` - provides a hint to the user about the data that should be entered into the field.
++ `minlength` - the minimum string length.
++ `maxlength` - the maximum string length.
++ `max` - the greatest value in the range of permitted values.
++ `size` - specified how much of the input is shown.
++ `value` - the initial value within the input.
++ `isRequired` - boolean to set the field to be `required`. This will add the `required` attribute.
++ `setAutocapitalize` - boolean to set the field to have the `autocapitalize` attribute which controls automatic capitilization in the inputting text. Excludes the `url`, `email` and `password` input types.
++ `setAutocomplete` - boolean to set the field to have the `autocomplete` attribute which provides a hint for the form autofill feature.
++ `...others` - additional props.
+
+```javascript
+// Default - this will default to having the type of "text"
+<Input />
+
+// Set a different type value
+<Input type="tel" />
+
+// Set values for props
+<Input id="example" name="example" minlength={10} maxlength={20} value="Lorem ipsum" placeholder="Lorem ipsum" />
+<Input isRequired setAutocapitalize setAutocomplete />
+```
+
 ### Link
 To import the component:
 
