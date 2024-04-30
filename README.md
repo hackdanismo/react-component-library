@@ -118,6 +118,42 @@ import { Image } from "@hackdanismo/react-component-library"
 <Image to="https://example.com" src="images/image-one.jpg" height={100} width={100} alt="Example image description here." openAsTab />
 ```
 
+### Input
+To import the component:
+
+```javascript
+import { Input } from "@hackdanismo/react-component-library"
+```
+
+`Input` component `props`:
+
++ `type` - set the data type for the field: `"date"`, `"datetime-local"`, `"email"`, `"hidden"`, `"month"`, `"number"` `"password"`, `"search"`, `"tel"`, `"text"` (default), `"time"`, `"url"` and `"week"`.
++ `className` - pass classes to apply styling into the component.
++ `id` - used as a value to connect to a `<label>` element when using the `for` attribute in a form label.
++ `name` - used as a value during form submissions to submit form data.
++ `placeholder` - provides a hint to the user about the data that should be entered into the field.
++ `minlength` - the minimum string length.
++ `maxlength` - the maximum string length.
++ `max` - the greatest value in the range of permitted values.
++ `size` - specified how much of the input is shown.
++ `value` - the initial value within the input.
++ `isRequired` - boolean to set the field to be `required`. This will add the `required` attribute.
++ `setAutocapitalize` - boolean to set the field to have the `autocapitalize` attribute which controls automatic capitilization in the inputting text. Excludes the `url`, `email` and `password` input types.
++ `setAutocomplete` - boolean to set the field to have the `autocomplete` attribute which provides a hint for the form autofill feature.
++ `...others` - additional props.
+
+```javascript
+// Default - this will default to having the type of "text"
+<Input />
+
+// Set a different type value
+<Input type="tel" />
+
+// Set values for props
+<Input id="example" name="example" minlength={10} maxlength={20} value="Lorem ipsum" placeholder="Lorem ipsum" />
+<Input isRequired setAutocapitalize setAutocomplete />
+```
+
 ### Link
 To import the component:
 

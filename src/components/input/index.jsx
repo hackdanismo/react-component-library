@@ -6,23 +6,23 @@ const Input = ({
     id, 
     name, 
     placeholder,
-    minlength, 
+    minlength,
     maxlength, 
+    max, 
     size, 
+    value,
     isRequired, 
     setAutocapitalize,
     setAutocomplete,
-    isChecked,
     ...others 
   }) => {
   return (
     <input 
-      {...{ type, id, name, placeholder }} 
+      {...{ type, id, name, placeholder, minlength, maxlength, max, size, value }} 
       className={className ? className : undefined} 
       required={isRequired ? isRequired : undefined} 
       autocapitalize={setAutocapitalize ? setAutocapitalize : undefined}
       autocomplete={setAutocomplete ? setAutocomplete : undefined}
-      isChecked={isChecked ? isChecked : undefined}
       {...others} 
     />
   )
@@ -31,23 +31,14 @@ const Input = ({
 Input.propTypes = {
   type: PropTypes.oneOf(
     [
-      "button", 
-      "checkbox", 
-      "color", 
       "date",
       "datetime-local",
       "email",
-      "file",
       "hidden",
-      "image",
       "month",
       "number",
       "password",
-      "radio",
-      "range",
-      "reset",
       "search",
-      "submit",
       "tel",
       "text",
       "time",
@@ -61,7 +52,9 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   minlength: PropTypes.number,
   maxlength: PropTypes.number,
+  max: PropTypes.number,
   size: PropTypes.number,
+  value: PropTypes.string,
   isRequired: PropTypes.bool,
   setAutocapitalize: PropTypes.bool,
   setAutocomplete: PropTypes.bool,
