@@ -1,6 +1,7 @@
 # Changelog
 
 ## 0.2.1 - TBC
++ `RELEASE.md` file renamed to `CHANGELOG.md`.
 
 ## 0.2.0 - 30th April, 2024
 + Update `react` and `react-dom` package versions from `18.3.0` to `18.3.1`.
