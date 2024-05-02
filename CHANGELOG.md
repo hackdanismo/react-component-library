@@ -1,4 +1,6 @@
-# Release Log
+# Changelog
+
+## 0.2.1 - TBC
 
 ## 0.2.0 - 30th April, 2024
 + Update `react` and `react-dom` package versions from `18.3.0` to `18.3.1`.
