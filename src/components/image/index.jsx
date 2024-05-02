@@ -1,11 +1,20 @@
 import PropTypes from "prop-types"
+import styled from "styled-components"
 
 import Link from "./../link/index.jsx"
+
+// Define the styles for the Image component using styled-components
+const StyledImage = styled.img`
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+`
 
 const Image = ({ to, openAsTab, src, width, height, alt, className, ...others }) => {
   // Object containing the image element that will be rendered along with the props
   const ImageElement = (
-    <img 
+    <StyledImage 
       {...{ src, width, height, alt }} 
       className={className ? className : undefined}  
       {...others} 
