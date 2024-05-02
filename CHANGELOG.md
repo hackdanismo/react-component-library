@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.1 - TBC
+## 0.2.1 - 2nd May, 2024
 + `RELEASE.md` file renamed to `CHANGELOG.md`.
 + Install the `styled-components` package, version `6.1.9`, as a `devDependency`.
 + Apply default CSS styling to the `Button` and `Link` components using `styled-components`.
