@@ -1,4 +1,9 @@
-# Release Log
+# Changelog
+
+## 0.2.1 - 2nd May, 2024
++ `RELEASE.md` file renamed to `CHANGELOG.md`.
++ Install the `styled-components` package, version `6.1.9`, as a `devDependency`.
++ Apply default CSS styling to the `Button` and `Link` components using `styled-components`.
 
 ## 0.2.0 - 30th April, 2024
 + Update `react` and `react-dom` package versions from `18.3.0` to `18.3.1`.
