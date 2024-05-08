@@ -2,6 +2,7 @@
 
 ## 0.2.2 - TBC
 + Update `Node` version to `20.13.0` within the `.nvmrc` config file and `package.json` file.
++ Components updated to include the `style` prop to allow inline CSS styles to be added.
 
 ## 0.2.1 - 2nd May, 2024
 + `RELEASE.md` file renamed to `CHANGELOG.md`.

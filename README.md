@@ -3,14 +3,40 @@ An open-source `React Component Library` written in `JavaScript` and released un
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+[![npm version](https://badge.fury.io/js/@hackdanismo%2Freact-component-library.svg)](https://badge.fury.io/js/@hackdanismo%2Freact-component-library)
+
 ## NPM Package
 The component library can be installed using `npm` here: `https://www.npmjs.com/package/@hackdanismo/react-component-library`
 
-## Install
+## Development
+Follow these steps to clone the repository and begin development.
+
+### Clone the Repository
+To clone the repository, open the terminal and use `git` to clone the repository locally. You must have `git` installed on your machine to do this.
+
+```shell
+$ git clone git@github.com:hackdanismo/react-component-library.git
+```
+
+### Install
 To install the component library in your `React` project, use `npm` to install the package as a `dependency`. Once installation is completed, the component library can be located within the `node_modules` folder and listed as a `dependency` within the `package.json` file.
 
 ```shell
 $ npm install @hackdanismo/react-component-library
+```
+
+### Run
+
+Once installed, use `nvm`, also referred to as `Node Version Manager`, to set the correct `Node` version. You should have `nvm` installed before running this step.
+
+```shell
+$ nvm use
+```
+
+Commit any changes made to the code and run the `build` to ensure everything works as expected:
+
+```shell
+$ npm run build
 ```
 
 ## Components
