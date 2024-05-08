@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.3 - 8th May, 2024
++ **[Fix]** - Install the `styled-components` package as a `dependency` rather than a `devDependency` to fix issue with the library not rendering when installed in applications.
+
 ## 0.2.2 - 8th May, 2024
 + Update `Node` version to `20.13.0` within the `.nvmrc` config file and `package.json` file.
 + Components updated to include the `style` prop to allow inline CSS styles to be added.

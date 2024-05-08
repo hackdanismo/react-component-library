@@ -1,6 +1,6 @@
 {
   "name": "@hackdanismo/react-component-library",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "GPL-3.0-only",
   "engines": {
     "node": ">=20.13.0"
@@ -45,7 +45,9 @@
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-css-only": "^4.5.2",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "styled-components": "^6.1.9"
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.10"
   }
 }
