@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 const Input = ({ 
     type = "text", 
     className, 
+    style,
     id, 
     name, 
     placeholder,
@@ -20,6 +21,7 @@ const Input = ({
     <input 
       {...{ type, id, name, placeholder, minlength, maxlength, max, size, value }} 
       className={className ? className : undefined} 
+      style={style ? style : undefined} 
       required={isRequired ? isRequired : undefined} 
       autocapitalize={setAutocapitalize ? setAutocapitalize : undefined}
       autocomplete={setAutocomplete ? setAutocomplete : undefined}
@@ -47,6 +49,7 @@ Input.propTypes = {
     ]
   ).isRequired,
   className: PropTypes.string,
+  style: PropTypes.string,
   id: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,

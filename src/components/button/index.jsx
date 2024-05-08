@@ -17,11 +17,11 @@ const StyledLink = styled(Link).attrs(props => ({
   ${StyledButton} 
 `
 
-const Button = ({ to, type = "button", className, onClick, isDisabled, openAsTab, children, ...others }) => {
+const Button = ({ to, type = "button", className, style, onClick, isDisabled, openAsTab, children, ...others }) => {
   return to ? (
     <StyledLink 
       href={to} 
-      {... { className, openAsTab }}
+      {... { className, style, openAsTab }}
       {...others}
     >
       {children}
@@ -30,6 +30,7 @@ const Button = ({ to, type = "button", className, onClick, isDisabled, openAsTab
     <StyledButton 
       {...{ type, onClick }} 
       className={className ? className : undefined} 
+      style={style ? style : undefined}
       disabled={isDisabled ? isDisabled : undefined} 
       {...others}
     >
@@ -42,6 +43,7 @@ Button.propTypes = {
   to: PropTypes.string,
   type: PropTypes.oneOf(["button", "submit", "reset"]).isRequired,
   className: PropTypes.string,
+  style: PropTypes.string,
   isDisabled: PropTypes.bool,
   openAsTab: PropTypes.bool,
   children: PropTypes.node.isRequired,
