@@ -1,8 +1,9 @@
 # Changelog
 
-## 0.2.2 - TBC
+## 0.2.2 - 8th May, 2024
 + Update `Node` version to `20.13.0` within the `.nvmrc` config file and `package.json` file.
 + Components updated to include the `style` prop to allow inline CSS styles to be added.
++ Add the `label` element to the `Input` component to fix missing accessibility requirement and to render the `for` attribute on the `label` if the `name` and `label` props have values.
 
 ## 0.2.1 - 2nd May, 2024
 + `RELEASE.md` file renamed to `CHANGELOG.md`.

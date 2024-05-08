@@ -19,7 +19,8 @@ const Input = ({
     ...others 
   }) => {
   return (
-    <label>
+    /* Render the "for" attribute on the label only if the label and name props have values */
+    <label htmlFor={label && name ? name : undefined}>
       {label}
       <input 
         {...{ type, id, name, placeholder, minlength, maxlength, max, size, value }} 
