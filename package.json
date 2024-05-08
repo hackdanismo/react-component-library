@@ -1,9 +1,9 @@
 {
   "name": "@hackdanismo/react-component-library",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "GPL-3.0-only",
   "engines": {
-    "node": ">=20.12.2"
+    "node": ">=20.13.0"
   },
   "keywords": [
     "React",

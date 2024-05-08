@@ -11,12 +11,13 @@ const StyledImage = styled.img`
   border: 0;
 `
 
-const Image = ({ to, openAsTab, src, width, height, alt, className, ...others }) => {
+const Image = ({ to, openAsTab, src, width, height, alt, className, style, ...others }) => {
   // Object containing the image element that will be rendered along with the props
   const ImageElement = (
     <StyledImage 
       {...{ src, width, height, alt }} 
-      className={className ? className : undefined}  
+      className={className ? className : undefined} 
+      style={style ? style : undefined}  
       {...others} 
     />
   )
@@ -40,6 +41,7 @@ Image.propTypes = {
   height: PropTypes.number.isRequired,
   alt: PropTypes.string.isRequired,
   className: PropTypes.string,
+  style: PropTypes.string,
 }
 
 export default Image
