@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2 - TBC
++ Update `Node` version to `20.13.0` within the `.nvmrc` config file and `package.json` file.
+
 ## 0.2.1 - 2nd May, 2024
 + `RELEASE.md` file renamed to `CHANGELOG.md`.
 + Install the `styled-components` package, version `6.1.9`, as a `devDependency`.
