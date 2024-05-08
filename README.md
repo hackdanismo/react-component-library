@@ -8,10 +8,10 @@ An open-source `React Component Library` written in `JavaScript` and released un
 ## NPM Package
 The component library can be installed using `npm` here: `https://www.npmjs.com/package/@hackdanismo/react-component-library`
 
-## Development
+## Development
 Follow these steps to clone the repository and begin development.
 
-### Clone the Repository
+### Clone the Repository
 To clone the repository, open the terminal and use `git` to clone the repository locally. You must have `git` installed on your machine to do this.
 
 ```shell
