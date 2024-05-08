@@ -166,6 +166,7 @@ import { Input } from "@hackdanismo/react-component-library"
 + `style` - add inline CSS styling to the component.
 + `id` - used as a value to connect to a `<label>` element when using the `for` attribute in a form label.
 + `name` - used as a value during form submissions to submit form data.
++ `label` - add a string to display a label before the input field.
 + `placeholder` - provides a hint to the user about the data that should be entered into the field.
 + `minlength` - the minimum string length.
 + `maxlength` - the maximum string length.
@@ -186,6 +187,7 @@ import { Input } from "@hackdanismo/react-component-library"
 
 // Set values for props
 <Input id="example" name="example" minlength={10} maxlength={20} value="Lorem ipsum" placeholder="Lorem ipsum" />
+<Input id="example" label="Example field" name="example" minlength={10} maxlength={20} value="Lorem ipsum" placeholder="Lorem ipsum" />
 <Input isRequired setAutocapitalize setAutocomplete />
 <Input className="foo bar" style={{ border: `1px solid black` }} />
 ```

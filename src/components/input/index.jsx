@@ -6,6 +6,7 @@ const Input = ({
     style,
     id, 
     name, 
+    label,
     placeholder,
     minlength,
     maxlength, 
@@ -18,15 +19,18 @@ const Input = ({
     ...others 
   }) => {
   return (
-    <input 
-      {...{ type, id, name, placeholder, minlength, maxlength, max, size, value }} 
-      className={className ? className : undefined} 
-      style={style ? style : undefined} 
-      required={isRequired ? isRequired : undefined} 
-      autocapitalize={setAutocapitalize ? setAutocapitalize : undefined}
-      autocomplete={setAutocomplete ? setAutocomplete : undefined}
-      {...others} 
-    />
+    <label>
+      {label}
+      <input 
+        {...{ type, id, name, placeholder, minlength, maxlength, max, size, value }} 
+        className={className ? className : undefined} 
+        style={style ? style : undefined} 
+        required={isRequired ? isRequired : undefined} 
+        autocapitalize={setAutocapitalize ? setAutocapitalize : undefined}
+        autocomplete={setAutocomplete ? setAutocomplete : undefined}
+        {...others} 
+      />
+    </label>
   )
 }
 
@@ -52,6 +56,7 @@ Input.propTypes = {
   style: PropTypes.string,
   id: PropTypes.string,
   name: PropTypes.string,
+  label: PropTypes.string,
   placeholder: PropTypes.string,
   minlength: PropTypes.number,
   maxlength: PropTypes.number,
